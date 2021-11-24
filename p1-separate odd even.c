@@ -2,7 +2,7 @@
 void main()
 {
     int i, arr1[10], arr2[10], arr3[10], EvenIndex=0, OddIndex=0;
-    //test
+    
     //int EvenCount, OddCount;
    
     printf("Entering 10 elements\n");
