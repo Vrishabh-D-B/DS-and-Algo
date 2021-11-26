@@ -3,11 +3,11 @@
 int main()
 {
 	int *a,n,i,j,temp;
-	printf("Enter size of array:");
+	printf("Enter size of array : ");
 	scanf("%d",&n);
 
 	a=calloc(sizeof(int),n);
-	printf("Enter %d Elements:",n);
+	printf("Enter %d Elements : ",n);
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",a+i);
@@ -27,9 +27,8 @@ int main()
 	}
 	printf("After sorting it in ascending order:");
 	for(i=0;i<n;i++)
-	{
 		printf(" %d",*(a+i));
-	}
+	printf("\n");
 	return 0;
 				
 }
