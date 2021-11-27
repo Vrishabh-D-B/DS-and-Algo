@@ -18,27 +18,25 @@ int main()
 
     for(i = 0; i < Row; i++)
         for(j = 0; j < Column; j++)
+        {
             sum[i][j] = first[i][j] + second[i][j];
             diff[i][j] = first[i][j] - second[i][j];
+        }   
 
 
     printf("\nThe sum of the two entered matrices is: \n");
     for(i = 0; i < Row; i++)
-    {
+     {
         for(j = 0; j < Column; j++)
-        {
             printf("%d\t", sum[i][j]);
-        }
         printf("\n");
-    }
+     }  
     
     printf("\nThe difference(subtraction) of the two entered matrices is: \n");
     for(i = 0; i < Row; i++)
     {
         for(j = 0; j < Column; j++)
-        {
             printf("%d\t", diff[i][j]);
-        }
         printf("\n");
     }
 

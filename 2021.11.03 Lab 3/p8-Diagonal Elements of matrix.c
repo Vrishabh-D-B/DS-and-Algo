@@ -27,7 +27,6 @@ int main()
 
     if(Row==Column)
     {
-            
             for(i=0;i<Row;i++)
             {
                 for(j=0;j<Column;j++)
@@ -38,7 +37,6 @@ int main()
                     else
                         printf(" ");   
                 }
-                //printf("\n\n");   /*after each row print new line*/
             }
             printf("\n");
     }

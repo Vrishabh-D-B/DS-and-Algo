@@ -6,9 +6,9 @@
 #define R2 3            
 #define C2 3            
  
-void mulMat(int mat1[][C1], int mat2[][C2]) {
+// void mulMat(int mat1[][C1], int mat2[][C2]) {
     
-}
+// }
  
 void main() 
 {
@@ -28,11 +28,7 @@ void main()
             scanf("%d", &mat2[i][j]);
  
     if (C1 != R2) {
-        printf("The number of columns in Matrix-1  must be equal to the number of rows in "
-                "Matrix-2\n");
-        printf("Please update MACROs value according to your array dimension in "
-                "#define section\n");
- 
+        printf("The number of columns in Matrix-1  must be equal to the number of rows in Matrix-2\nTRY AGAIN\n");
         exit(EXIT_FAILURE);
     }
  
