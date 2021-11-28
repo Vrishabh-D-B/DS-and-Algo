@@ -7,7 +7,7 @@ int main()
    int i, arr[NUM];
    int largest, second;
     
-    printf("\nEnter %d values for arr : ",NUM);
+    printf("Enter %d values for arr : ",NUM);
     for(i=0;i<NUM;i++)
         scanf("%d",&arr[i]);
    
@@ -29,7 +29,7 @@ int main()
       }
    }
 
-   printf("\nSecond Largest- %d \n", second);   
+   printf("Second Largest:- %d \n", second);   
 
    return 0;
 }
