@@ -6,12 +6,12 @@ int main()
 {
     int i, j, first[Row][Column], second[Row][Column], sum[Row][Column], diff[Row][Column];
     
-    printf("\nEnter the %d elements of the first matrix : ", Row*Column);
+    printf("Enter the %d elements of the first matrix : ", Row*Column);
     for(i = 0; i < Row; i++)   
         for(j = 0; j < Column; j++)   
             scanf("%d", &first[i][j]);
 
-    printf("\nEnter the %d elements of the second matrix : ", Row*Column);
+    printf("Enter the %d elements of the second matrix : ", Row*Column);
     for(i = 0; i < Row; i++)   
         for(j = 0; j < Column; j++)   
             scanf("%d", &second[i][j]);
@@ -24,7 +24,7 @@ int main()
         }   
 
 
-    printf("\nThe sum of the two entered matrices is: \n");
+    printf("The sum of the two entered matrices is: \n");
     for(i = 0; i < Row; i++)
      {
         for(j = 0; j < Column; j++)
@@ -32,7 +32,7 @@ int main()
         printf("\n");
      }  
     
-    printf("\nThe difference(subtraction) of the two entered matrices is: \n");
+    printf("The difference(subtraction) of the two entered matrices is: \n");
     for(i = 0; i < Row; i++)
     {
         for(j = 0; j < Column; j++)
