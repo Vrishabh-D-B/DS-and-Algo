@@ -8,12 +8,12 @@ int main()
     int i,j,m,n;
 
    
-    printf("\nEnter the %d elements of the matrix : ", Row*Column);
+    printf("Enter the %d elements of the matrix : ", Row*Column);
     for(i = 0; i < Row; i++)   
         for(j = 0; j < Column; j++)   
             scanf("%d", &Arr[i][j]);
 
-    printf("\nThe Given matrix is: \n");
+    printf("The Given matrix is: \n");
     for(i = 0; i < Row; i++)   
     {
         for(j = 0; j < Column; j++)   
@@ -23,7 +23,7 @@ int main()
     printf("\n");
     }
 
-    printf("\nThe Diagonals elements of a matrix are : ");
+    printf("The Diagonals elements of a matrix are : ");
 
     if(Row==Column)
     {

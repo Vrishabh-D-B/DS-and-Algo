@@ -7,7 +7,7 @@ int main(){
    int Arr[Row][Column];
    
    int i, j, sum =0, mul=1;
-   printf("\nEnter the %d elements of the matrix : ", Row*Column);
+   printf("Enter the %d elements of the matrix : ", Row*Column);
     for(i = 0; i < Row; i++)   
         for(j = 0; j < Column; j++)   
             scanf("%d", &Arr[i][j]);

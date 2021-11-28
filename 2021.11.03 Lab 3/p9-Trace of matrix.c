@@ -6,7 +6,7 @@ void main()
     printf ("Enter order of the square matrix :") ;
     scanf ("%d", &m);
     
-    printf("\nEnter the %d elements of the matrix : ", m*m);
+    printf("Enter the %d elements of the matrix : ", m*m);
     for(i = 0; i < m; i++)   
         for(j = 0; j < m; j++)   
             scanf("%d", &Arr[i][j]);

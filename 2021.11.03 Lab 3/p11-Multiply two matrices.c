@@ -17,12 +17,12 @@ void main()
     int rslt[R1][C2];
     int i,j,k;
 
-    printf("\nEnter the %d elements of the first matrix : ", R1*C1);
+    printf("Enter the %d elements of the first matrix : ", R1*C1);
     for(i = 0; i < R1; i++)   
         for(j = 0; j < C1; j++)   
             scanf("%d", &mat1[i][j]);
 
-    printf("\nEnter the %d elements of the second matrix : ", R2*C2);
+    printf("Enter the %d elements of the second matrix : ", R2*C2);
     for(i = 0; i < R2; i++)   
         for(j = 0; j < C2; j++)   
             scanf("%d", &mat2[i][j]);
@@ -32,7 +32,7 @@ void main()
         exit(EXIT_FAILURE);
     }
  
-    printf("\nMultiplication of given two matrices is:\n\n");
+    printf("Multiplication of given two matrices is:\n\n");
  
     for (i = 0; i < R1; i++) {
         for (j = 0; j < C2; j++) {
