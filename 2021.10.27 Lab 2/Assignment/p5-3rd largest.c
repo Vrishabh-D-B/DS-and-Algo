@@ -6,7 +6,7 @@ void main()
     int arr[NUM];
     int x,y,z,i;
 
-    printf("\nEnter %d values for arr : ",NUM);
+    printf("Enter %d values for arr : ",NUM);
     for(i=0;i<NUM;i++)
         scanf("%d",&arr[i]);
 
@@ -28,5 +28,5 @@ void main()
         else if(arr[i]>x)
             x=arr[i];
     }
-    printf("\nThird largest : %d \n",x);
+    printf("Third largest : %d \n",x);
 }
