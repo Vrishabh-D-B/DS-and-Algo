@@ -1,32 +1,28 @@
-#define NUM 5
 
-#include<stdio.h>
+#include <stdio.h>
+#define NUM 5
+void swap(int *xp, int *yp)
+{
+	int temp = *xp;
+	*xp = *yp;
+	*yp = temp;
+}
+void Sort(int arr[], int n)
+{
+int i, j;
+for (i = 0; i < n-1; i++)	
+    for (j = 0; j < n-i-1; j++)
+		if (arr[j] > arr[j+1])
+			swap(&arr[j], &arr[j+1]);
+}
 void main()
 {
-    int arr[NUM];
-    int x,y,z,i;
-
+    int i,arr[NUM];
+    
     printf("Enter %d values for arr : ",NUM);
     for(i=0;i<NUM;i++)
         scanf("%d",&arr[i]);
 
-    x=y=z=arr[0] ;
-
-    for(i=1;i<NUM;i++)
-    {
-        if (arr[i]>z)
-        {
-            x=y;
-            y=z;
-            z=arr[i];
-        }
-        else if(arr[i]>y)
-        {
-            x=y;
-            y=arr[i];
-        }
-        else if(arr[i]>x)
-            x=arr[i];
-    }
-    printf("Third largest : %d \n",x);
+    Sort(arr, NUM);
+    printf("Third Largest:- %d \n",arr[2]);
 }
