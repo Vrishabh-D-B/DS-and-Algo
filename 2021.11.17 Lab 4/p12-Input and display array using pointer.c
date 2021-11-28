@@ -12,5 +12,6 @@ void main()
     printf("\nElements of array are : ");
     for(i = 0; i < 10; i++)
         printf("%d ",*(p + i));
+    printf("\n");
     
 }
