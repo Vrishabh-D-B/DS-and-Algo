@@ -2,19 +2,19 @@
 #define MAX 20
 void insertionSort(int a[], int n){
     int i,j,key;
-    for ( i = 0; i < n; i++){
+    for ( i = 1; i < n; i++){
         key = a[i];
         j = i;
-        while(a[j-1] > key && j >= 1){
+        while(j >= 1 && a[j-1] > key){
             a[j] = a[j-1];
             j--;
         }
-        a[j] = key; 
+        a[j] = key;
     }
     
 }
 int main(){
-    int arr[] = {25, 36, 12, 02, 78, 65, 55};
+    int arr[] = {25, 36, 12, 02, 78, 65, 55, 1};
 	int n = sizeof(arr)/sizeof(arr[0]);
     
     printf("Array : ");
