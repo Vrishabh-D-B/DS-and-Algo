@@ -16,7 +16,7 @@ void insertionSort(int a[], int n){
 int main(){
     int arr[] = {25, 36, 12, 02, 78, 65, 55, 1};
 	int n = sizeof(arr)/sizeof(arr[0]);
-    
+    printf("Insertion Sort\n");
     printf("Array : ");
     int i = 0;
     for(i = 0;i < n;i++)
