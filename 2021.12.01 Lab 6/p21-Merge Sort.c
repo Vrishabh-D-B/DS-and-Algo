@@ -1,9 +1,4 @@
-void mergeSort(int a[], int lb, int ub){
-    int mid = (lb + ub)/2;
-    mergeSort(a, lb, mid);
-    mergeSort(a, mid + 1, ub);
-    merge(a, lb, mid, ub);
-}
+#include <stdio.h>
 
 void merge(int a[], int lb, int mid, int ub){
     int arrb[10], i, j, k;
@@ -34,11 +29,17 @@ void merge(int a[], int lb, int mid, int ub){
         a[k] = arrb[k];
 }
 
-#include <stdio.h>
+void mergeSort(int a[], int lb, int ub){
+    int mid = (lb + ub)/2;
+    mergeSort(a, lb, mid);
+    mergeSort(a, mid + 1, ub);
+    merge(a, lb, mid, ub);
+}
 
 int main() {
     int arr[10], i;
   
+    printf("Merge Sort\n");
     printf("Enter 10 numbers: ");
     for(i = 0; i < 10; i++) 
         scanf("%d", &arr[i]);
