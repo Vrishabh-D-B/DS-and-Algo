@@ -50,12 +50,13 @@ int main() {
   
   int n = sizeof(data) / sizeof(data[0]);
   
+  printf("Quick Sort\n");
   printf("Unsorted Array\n");
   printArray(data, n);
   
   quickSort(data, 0, n - 1);
   
-  printf("Sorted array in ascending order: \n");
+  printf("Sorted array: \n");
   printArray(data, n);
 
   return 0;
