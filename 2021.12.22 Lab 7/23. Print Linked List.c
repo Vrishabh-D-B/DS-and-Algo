@@ -26,7 +26,7 @@ struct node *createLinkedList(struct node *head)
       ptr = head;
       while (ptr->next != NULL)
         ptr = ptr->next;
-      ptr->next = newNode;
+        ptr->next = newNode;
     }
   }
   return head;
